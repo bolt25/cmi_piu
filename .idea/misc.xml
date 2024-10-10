@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="Black">
+    <option name="sdkName" value="kaggle_cmi_piu" />
+  </component>
   <component name="ProjectRootManager" version="2" project-jdk-name="kaggle_cmi_piu" project-jdk-type="Python SDK" />
 </project>
