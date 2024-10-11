@@ -13,4 +13,27 @@ def register_pipelines() -> Dict[str, Pipeline]:
     """
     pipelines = find_pipelines()
     pipelines["__default__"] = sum(pipelines.values())
+    print(pipelines)
     return pipelines
+
+
+
+# import spaceflights.pipelines.data_processing as dp
+# import spaceflights.pipelines.data_science as ds
+
+
+# def register_pipelines() -> Dict[str, Pipeline]:
+#     """Register the project's pipelines.
+#
+#     Returns:
+#         A mapping from pipeline names to ``Pipeline`` objects.
+#     """
+#     data_processing_pipeline = dp.create_pipeline()
+#     data_science_pipeline = ds.create_pipeline()
+#
+#     return {
+#         "__default__": data_processing_pipeline + data_science_pipeline,
+#         "data_processing": data_processing_pipeline,
+#         "data_science": data_science_pipeline,
+#     }
+
