@@ -4,6 +4,7 @@ import pandas as pd
 def setIndex(
         data: pd.DataFrame,
 ):
+    print(data.set_index("id"))
     return data.set_index("id")
 
 
