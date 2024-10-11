@@ -1,0 +1,17 @@
+
+train:
+  type: pandas.CSVDataset
+  filepath: data/01_raw/train.csv
+
+scoring:
+  type: pandas.CSVDataset
+  filepath: data/01_raw/test.csv
+
+
+train_set_index:
+  type: pandas.CSVDataset
+  filepath: data/02_raw/train_set_index.csv
+
+scoring_set_index:
+  type: pandas.CSVDataset
+  filepath: data/02_raw/scoring_set_index.csv
